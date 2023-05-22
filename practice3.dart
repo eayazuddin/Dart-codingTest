@@ -21,3 +21,24 @@ Hints
 - To access a property of an object, use the dot notation: objectName.propertyName.
 - Age in months = age * 12 
 */
+class Person {
+  String name;
+  int age;
+  String address;
+
+  Person(this.name, this.age, this.address);
+
+  void sayHello() {
+    print('Hello, my name is $name');
+  }
+
+  int getAgeInMonths() {
+    return age * 12;
+  }
+}
+
+void main() {
+  var person = Person('Eayaz', 23, 'Mohammadpur');
+  person.sayHello();
+  print(person.getAgeInMonths());
+}
